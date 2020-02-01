@@ -60,6 +60,7 @@ body{
     border-radius: 8px;
     color: rgb(175, 202, 219);
     font-size: 30px;
+    text-decoration: none;
 }
 
 #about{

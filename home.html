@@ -5,8 +5,6 @@ SIDEBAR
 -PORTFOLIO
 -CONTACT
 -RESUME
-
-
  -->
 
 <!DOCTYPE html>
@@ -18,57 +16,45 @@ SIDEBAR
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Eric Myer | Software developer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.css">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:900|Permanent+Marker&display=swap" rel="stylesheet">    <link rel="stylesheet" href="home.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:900|Permanent+Marker&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
 </head>
 
 <body>
-    <!-- <div aria-hidden="false" tabindex="1" class="sidebar">
-        <aside>
-            <nav>
-                <ul class="sidebar_list">
-                    <li>
-                        <a href="#about">About Me</a>
-                    </li>
-                    <li>
-                        <a href="#skills">Skills</a>
-                    </li>
-                    <li>
-                        <a href="#portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                    <li>
-                        <a href="#resume">Resume</a>
-                    </li>
-                <ul>
-            </nav>
-        </aside>
-    </div aria-hidden="false" tabindex="1"> -->
-    <header class="nav_bar">
-        <nav>
-            <a href="" id="home_link"><i class="fab fa-pied-piper-square" alt="Logo" id="logo"></i></a>
-            <!-- DEV_SOLO -->
-            <a href="" id="nav_link"><i class="fas fa-bars" alt="Sidebar Icon" id="sidebar_icon"></i></a>
-        </nav>
+
+    <header class="nav_bar" id="nav_bar">
+        <a href="" id="home_link"><i class="fab fa-pied-piper-square" alt="Logo" id="logo"></i></a>
+        <!-- DEV_SOLO -->
+        <span id="sidebar_btn" onclick="openNav()"><i class="fas fa-bars" alt="Sidebar Icon"
+                id="sidebar_icon"></i></span>
+
+
+        <div class="sidebar" id="sidebar">
+            <a href="#about">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <a target="_blank"
+                href="https://docs.google.com/document/d/1aCaqw_nA2VJ1JzE4000XpH3vCGWpTHpm2oapKRsn0DM/edit?usp=sharing">
+                Resume
+            </a>
+        </div>
     </header>
 
-    
 
     <div class="content">
         <main class="content_sections">
 
             <h1 id="moniker">Eric Myer</h1>
 
-            
-
             <section id="about">
                 <h2>About Me</h2>
                 <p>
-                    Hi! I am Eric, a growing software developer 
+                    Hi! I am Eric, a growing software developer
                     based in Chicago, IL where I grew up. I put
-                    most of my energy into coding and 
-                    occasionally designing an intuitive and 
+                    most of my energy into coding and
+                    occasionally designing an intuitive and
                     modern frontend for websites and web apps.
                 </p>
 
@@ -104,13 +90,28 @@ SIDEBAR
                 <p>.</p>
             </section>
 
-            <a id="resume"
-            href="https://docs.google.com/document/d/1aCaqw_nA2VJ1JzE4000XpH3vCGWpTHpm2oapKRsn0DM/edit?usp=sharing">
-            Resume
+            <a id="resume" target="_blank"
+                href="https://docs.google.com/document/d/1aCaqw_nA2VJ1JzE4000XpH3vCGWpTHpm2oapKRsn0DM/edit?usp=sharing">
+                Resume
             </a>
         </main>
         </p>
     </div>
+
+    <script>
+
+        function openNav() {
+            document.getElementById("sidebar").style.width = "95vw"
+            document.getElementById("sidebar").onclick = function () { closeNav() }
+            document.getElementById("nav_bar").style.height = "95%"
+            }
+
+        function closeNav() {
+            document.getElementById("sidebar").style.width = "0"
+            document.getElementById("nav_bar").style.height = "initial"
+        }
+
+    </script>
 
 </body>
 

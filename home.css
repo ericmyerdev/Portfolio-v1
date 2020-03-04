@@ -17,6 +17,7 @@ body{
     padding-top: 8px;
     padding-bottom: 8px;
     background-color: #62ACB5;
+    opacity: 90%;
 }
 
 #logo{
@@ -37,7 +38,7 @@ body{
     /* border: black 1px solid; */
 }
 
-#nav_link{
+#sidebar_btn{
     /* border: steelblue 1px solid; */
     margin-left: 70vw;
 }
@@ -48,8 +49,36 @@ body{
     justify-content: center;
     align-items: center;
     margin-top: 80px;
-    color: rgb(146, 174, 192);
     font-size: 70px;
+}
+
+.sidebar{
+    display: block;
+    justify-content: center;
+    justify-items: center;
+    position: fixed;
+    height: 100%;
+    width: 0px;
+    overflow-x: hidden;
+    z-index: 1;
+    padding-top: 60px;
+}
+
+.sidebar a{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    color: rgb(43, 50, 56);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.sidebar .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }
 
 #resume{
@@ -76,7 +105,7 @@ body{
 
 .content{
     /* border: tomato 1px solid; */
-    width: 100%;
+    width: 95vw;
 }
 
 .content_sections{
@@ -90,12 +119,5 @@ body{
     justify-content: center;
     padding-left: 5px;
     padding-right: 0px;
-}
-
-
-.sidebar{
-}
-
-.sidebar_list{
 }
 

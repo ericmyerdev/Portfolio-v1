@@ -2,22 +2,8 @@ body{
     font-family: 'Noto Sans JP', sans-serif; 
     display: flex;
     justify-content: center;
-    background-color: rgb(43, 50, 56);
+    background-color: rgb(24, 27, 31);
     margin: auto 12px auto 12px;
-}
-
-.nav_bar{
-    /* border: red 1px solid; */
-    border-radius: 8px;
-    display: flex;
-    position: fixed;
-    justify-content: center;
-    width: 95vw;
-    margin-top: 16px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    background-color: #62ACB5;
-    opacity: 90%;
 }
 
 #logo{
@@ -40,16 +26,86 @@ body{
 
 #sidebar_btn{
     /* border: steelblue 1px solid; */
-    margin-left: 70vw;
+    margin-left: 85vw;
 }
 
-#moniker{
-    font-family: 'Permanent Marker', cursive;
+#resume{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 80px;
+    border: rgb(175, 202, 219) 1px solid;
+    border-radius: 8px;
+    color: rgb(175, 202, 219);
+    font-size: 30px;
+    text-decoration: none;
+}
+
+#about{
+    display: inline-flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#about h1{
+    float: left;
+    border: 1px blue solid;
     font-size: 70px;
+    margin: 0;
+}
+
+#about div{
+    float: right;
+    border: red 1px solid;
+}
+
+#about p{
+    font-size: 15px;
+    font-weight: 200;
+}
+
+#resume{
+    margin-top: 200px;
+}
+
+.nav_bar{
+    /* border: red 1px solid; */
+    border-radius: 8px;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    width: 95vw;
+    margin-top: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: #62ACB5;
+    opacity: 90%;
+}
+
+.content{
+    /* border: tomato 1px solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+    width: 75vw;
+}
+
+.content_sections{
+    color: rgb(86, 102, 112);
+    width: 100%;
+}
+
+.content_sections section{
+    display: flex;
+    border: green 1px solid;
+    width: 100%;
+    margin-top: 200px;
+}
+
+.content_sections h2{
+    color: rgb(175, 202, 219);
+    display: flex;
+    justify-content: center;
 }
 
 .sidebar{
@@ -80,44 +136,3 @@ body{
     font-size: 36px;
     margin-left: 50px;
 }
-
-#resume{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: rgb(175, 202, 219) 1px solid;
-    border-radius: 8px;
-    color: rgb(175, 202, 219);
-    font-size: 30px;
-    text-decoration: none;
-}
-
-#about{
-    /* border: aqua 1px solid; */
-    padding-top: 20px;
-    padding-bottom: 50px;
-}
-
-#about p{
-    font-size: 15px;
-    font-weight: 200;
-}
-
-.content{
-    /* border: tomato 1px solid; */
-    width: 95vw;
-}
-
-.content_sections{
-    color: rgb(86, 102, 112);
-}
-
-.content_sections h2{
-    color: rgb(175, 202, 219);
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    padding-left: 5px;
-    padding-right: 0px;
-}
-
